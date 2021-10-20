@@ -1,0 +1,17 @@
+.backcol{
+    background-color: #37506c;
+}
+.navbar_big-logo{
+    position: absolute;
+    left: 30px;
+    top: 0;
+    z-index: 2;
+    
+}
+@media (max-width: 576px){
+    .navbar_big-logo{
+    position: inherit;
+    left: 5px;
+    }
+}
+

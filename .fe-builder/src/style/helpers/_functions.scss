@@ -1,0 +1,7 @@
+@function rem-calc($px) {
+  @return ($px/$html-font-size)*1rem;
+}
+
+@function em-calc($px) {
+  @return ($px/$html-font-size)*1em;
+}
