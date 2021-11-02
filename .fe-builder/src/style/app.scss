@@ -3,17 +3,7 @@
 @import 'swiper/css/bundle';
 @import "global";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
-@import "./pages/carousel.scss";
-@import "./components/main-slider";
-
-
-body{
-    font-family:'HelveticaNeueCyr';
-    font-weight: 500;
-    font-style: normal;
-}
-    
-
+@import "./components/main-slider"; 
 
 //Components
 @import "components/header";
@@ -25,9 +15,7 @@ body{
 //Helpers
 @import "./helpers/functions";
 
-body{
-    background-color: #f2f2f2;
-}
+
 
 
 
