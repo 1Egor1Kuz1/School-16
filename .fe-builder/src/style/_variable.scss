@@ -1,17 +1,19 @@
-.backcol{
-    background-color: #37506c;
-}
-.navbar_big-logo{
-    position: absolute;
-    left: 30px;
-    top: 0;
-    z-index: 2;
-    
-}
-@media (max-width: 576px){
-    .navbar_big-logo{
-    position: inherit;
-    left: 5px;
-    }
-}
+
+$primary: #37506c;
+$grid-gutter-width: 0;
+$navbar-padding-y:0;
+$navbar-padding-x:0;
+$warning: #cc5116;
+
+
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%,
+  xxl: 98%
+);
+
+
 

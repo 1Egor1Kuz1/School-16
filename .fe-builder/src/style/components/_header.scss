@@ -1,0 +1,28 @@
+.navbar {
+    z-index: 100;
+    &__deckstop-logo {
+        @include media-breakpoint-down(sm) {
+            position: inherit;
+            left: 5px;
+        }
+    }
+    &__mobile-menu {
+        @include media-breakpoint-down(lg) {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 100%;
+            background: black;
+        }
+        &__other{
+            @include media-breakpoint-down(lg){
+                padding-left: 0;
+            }
+        }
+    }
+    &__toggler {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}

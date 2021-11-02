@@ -1,6 +1,8 @@
 import './style/app.scss';
 import 'bootstrap';
-import './style/pages/carousel'
+import './js/components/my-swiper'
+
+
 
 function onPageLoad() {
     require('./js/app');
