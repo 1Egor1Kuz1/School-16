@@ -26,4 +26,7 @@
     &__image {
         object-fit: cover;
     }
+    &_text{
+        background-image: url(../images/slider_background.png);
+    }
 }

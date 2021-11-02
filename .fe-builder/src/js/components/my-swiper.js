@@ -1,4 +1,6 @@
-import Swiper from 'swiper/bundle';
+import Swiper from 'swiper';
+// import 'swiper/swiper.min.css';
+
 const swiper = new Swiper(".mySwiper", {
     effect: "fade",
     loop: true,
