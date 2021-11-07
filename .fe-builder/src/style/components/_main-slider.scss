@@ -1,57 +1,55 @@
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
-    background-position: center;
-    background-size: cover;
+  background-position: center;
+  background-size: cover;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    color: #fff;
+  color: #fff;
 }
 
+
 .swiper-slide {
-   
-    &__image {
-        object-fit: cover;
+  &__wrapper {
+    @include imageWrapper(1920, 1080);
+  }
+
+  &__image {
+    @include absoluteCenterImage();
+  }
+
+  &__content {
+    position: absolute;
+    height: 40%;
+    right: 30%;
+    bottom: 0;
+    left: 0;
+    color: azure;
+    background-color: rgba($color: $primary, $alpha: 0.8);
+    display: flex;
+    flex-direction: column;
+
+    &__crop {
+      padding: 25px 40px;
+      flex-grow: 1;
     }
-    &__content {
-        position: absolute;
-        bottom: 0;
-        color: azure;
-        background-color: rgba($color: $primary, $alpha: 0.8);
-        width: 70%;
-        height: 40%;
-        padding: 0;
-        &__crop {
-            padding-right: 40px;
-            padding-left: 40px;
-            margin-bottom: 25px;
-            padding-top: 25px;
-            height: 70%;
-        }
-        &__footer {
-            background-color: rgba(0, 0, 0, 0.2);
-            height: 50px;
-            vertical-align: baseline;
-        }
-        &__footer-link {
-            display: block;
-            width: 100%;
-            height: 50px;
-            padding-right: 40px;
-            padding-left: 40px;
-            line-height: 50px;
-        
-            
-        }
+
+    &__footer {
+      background-color: rgba(0, 0, 0, 0.2);
+      height: 50px;
+      vertical-align: baseline;
+      display: flex;
+      align-items: center;
     }
+  }
 }
