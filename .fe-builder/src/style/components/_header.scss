@@ -14,15 +14,24 @@
             top: 100%;
             background: black;
         }
-        &__other{
-            @include media-breakpoint-down(lg){
-                padding-left: 0;
-            }
-        }
     }
     &__toggler {
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
+    }
+}
+.offcanvas-body {
+    &__text {
+        font-size: 1.2em;
+        text-align: end;
+        // border-bottom-width: 2px;
+        // border-bottom-style: solid;
+        // border-bottom-color: black;
+    }
+}
+.offcanvas-header {
+    &__title {
+        margin: 0;
     }
 }

@@ -1,5 +1,6 @@
 .swiper {
     width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
@@ -14,21 +15,43 @@
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    color: black;
+    color: #fff;
 }
 
 .swiper-slide {
-    &__img {
-        @include media-breakpoint-down(sm) {
-            display: none;
-        }
-    }
+   
     &__image {
         object-fit: cover;
     }
-    &__text{
-        background-image: url(../images/slider_background.png);
+    &__content {
+        position: absolute;
+        bottom: 0;
+        color: azure;
+        background-color: rgba($color: $primary, $alpha: 0.8);
+        width: 70%;
+        height: 40%;
+        padding: 0;
+        &__crop {
+            padding-right: 40px;
+            padding-left: 40px;
+            margin-bottom: 25px;
+            padding-top: 25px;
+            height: 70%;
+        }
+        &__footer {
+            background-color: rgba(0, 0, 0, 0.2);
+            height: 50px;
+            vertical-align: baseline;
+        }
+        &__footer-link {
+            display: block;
+            width: 100%;
+            height: 50px;
+            padding-right: 40px;
+            padding-left: 40px;
+            line-height: 50px;
+        
+            
+        }
     }
 }
-
-
