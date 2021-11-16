@@ -22,12 +22,27 @@
     }
 }
 .offcanvas-body {
+    padding: 0;
     &__text {
         font-size: 1.2em;
-        text-align: end;
-        // border-bottom-width: 2px;
-        // border-bottom-style: solid;
-        // border-bottom-color: black;
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid #000;
+        -webkit-transition: background-color 0.2s ease;
+        transition: background-color 0.2s ease;
+    }
+    &__dropdown-menu {
+        transform: translate3d(0px, 60px, 0px) !important;
+    }
+    &__dropdown-item {
+        font-size: 1em;
+        border-bottom: 1px solid #000;
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 15px;
     }
 }
 .offcanvas-header {

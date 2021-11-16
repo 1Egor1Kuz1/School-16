@@ -1,10 +1,9 @@
 .section-news {
-    padding: 35px 0 45px 0;
+    padding: 25px 0;
     display: block;
     background-color: #fff;
 
     &__header-h3 {
-        margin-bottom: 20px;
         font-size: 1.85714286rem;
         line-height: 1.35;
         font-weight: 700;
@@ -17,10 +16,34 @@
             text-transform: uppercase;
         }
     }
-
-    
 }
-.col-md-3{
+.col-md-3 {
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.news {
+    &__card {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s;
+        margin: 10px;
+    }
+    &__card:hover {
+        box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+    }
+    &__date:last-child {
+        margin-right: 0;
+    }
+    &__date {
+        -webkit-transition: color 0.2s ease;
+        transition: color 0.2s ease;
+    }
+    &__date {
+        display: inline-block;
+        max-width: 100%;
+        margin-right: 13px;
+        font-size: .85714286rem;
+        line-height: 1.4;
+        color: #9b9b9b;
+    }
 }
