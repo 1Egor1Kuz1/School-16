@@ -1,6 +1,7 @@
 import './style/app.scss';
 import 'bootstrap';
 import './js/components/my-swiper'
+import './js/components/offcanvas-show_hide'
 
 
 

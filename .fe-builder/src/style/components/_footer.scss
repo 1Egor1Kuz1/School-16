@@ -1,0 +1,16 @@
+.page-footer {
+    overflow: hidden;
+    width: 100%;
+    &__social-link {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 0;
+        text-align: center;
+    }
+    &__menu-foother {
+        padding: 45px 0;
+        @media (max-width: 991px) {
+            padding: 0;
+        }
+    }
+}
