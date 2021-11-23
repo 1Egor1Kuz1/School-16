@@ -3,18 +3,24 @@
     display: block;
     background-color: #fff;
 
-    &__header-h3 {
-        font-size: 1.85714286rem;
-        line-height: 1.35;
+    &__all-news {
         font-weight: 700;
         color: #000;
         word-wrap: break-word;
         padding-left: 15px;
-
-        &__spacing {
-            letter-spacing: 2.6px;
-            text-transform: uppercase;
-        }
+        padding-top: 5px;
+    }
+    &__spacing {
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+    }
+    &__bi {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: 2rem 2rem;
+        font-weight: 700 !important;
+        font-size: 14px;
+        margin-left: 4px;
     }
 }
 .col-md-3 {
@@ -31,6 +37,14 @@
     &__card:hover {
         box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
     }
+    &__img-wrapper {
+        @include imageWrapper(308, 172);
+        overflow: hidden;
+    }
+
+    &__image {
+        @include absoluteCenterImage();
+    }
     &__date:last-child {
         margin-right: 0;
     }
@@ -42,7 +56,7 @@
         display: inline-block;
         max-width: 100%;
         margin-right: 13px;
-        font-size: .85714286rem;
+        font-size: 0.85714286rem;
         line-height: 1.4;
         color: #9b9b9b;
     }

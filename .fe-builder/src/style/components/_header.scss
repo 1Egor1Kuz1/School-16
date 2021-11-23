@@ -52,3 +52,16 @@
         transition: background-color 0.2s ease;
     }
 }
+.menu {
+    list-style: none;
+    &__li {
+        ul {
+            display: none;
+            &.open {
+                display: block;
+            }
+        }
+        &.open {
+        }
+    }
+}

@@ -72,34 +72,30 @@
       </div>
       <div class="offcanvas-body bg-info">
 
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="#" class="offcanvas-body__text-show text-light" role="button" onclick="show_hide()">
-              Сведения об ОО
-            </a>
+        <ul class="navbar-nav menu">
+
+          <li class="menu__li">
+            <a href="" class="offcanvas-body__text-show text-light">link</a>
+            <ul class="float-menu">
+              <li class="offcanvas-body__text-hide text-light">1</li>
+              <li class="offcanvas-body__text-hide text-light">2</li>
+            </ul>
           </li>
 
-          <li class="nav-item" id="hide_text">
-            <a href="#" class="offcanvas-body__text-hide text-light">
-              Основные сведения
-            </a>
+          <li>
+            <a href="" class="offcanvas-body__text-show text-light">text</a>
           </li>
 
-          <li class="nav-item" id="hide_text">
-            <a href="#" class="offcanvas-body__text-hide text-light">
-              Структура и органы управления образовательной организацией
-            </a>
+          <li class="menu__li">
+            <a href="" class="offcanvas-body__text-show text-light">link</a>
+            <ul>
+              <li class="offcanvas-body__text-hide text-light">1</li>
+              <li class="offcanvas-body__text-hide text-light">2</li>
+              <li class="offcanvas-body__text-hide text-light">3</li>
+            </ul>
           </li>
 
-          <li class="nav-item" id="hide_text">
-            <a href="#" class="offcanvas-body__text-hide text-light">
-              Документы
-            </a>
-          </li>
         </ul>
-
-        <button onclick="show_hide()">go</button>
-        <div id="hide_text">Lorem ipsum dolor sit amet.</div>
 
       </div>
     </div>
@@ -119,7 +115,7 @@
                   </div>
                   <div class="swiper-slide__content__footer">
                     <div class="swiper-slide__content__footer-link">
-                      <span class="bt-text bt-text-white">ПОДРОБНЕЕ</span>
+                      <span class="bt-text bt-text-white">ПОДРОБНЕЕ<i class="bi bi-chevron-right"></i></span>
                     </div>
                   </div>
                 </div>
@@ -137,7 +133,7 @@
                   </div>
                   <div class="swiper-slide__content__footer">
                     <div class="swiper-slide__content__footer-link">
-                      <span class="bt-text bt-text-white ">ПОДРОБНЕЕ</span>
+                      <span class="bt-text bt-text-white ">ПОДРОБНЕЕ<i class="bi bi-chevron-right"></i></span>
                     </div>
                   </div>
                 </div>
@@ -155,7 +151,7 @@
                   </div>
                   <div class="swiper-slide__content__footer">
                     <div class="swiper-slide__content__footer-link">
-                      <span class="bt-text bt-text-white ">ПОДРОБНЕЕ</span>
+                      <span class="bt-text bt-text-white ">ПОДРОБНЕЕ<i class="bi bi-chevron-right"></i></span>
                     </div>
                   </div>
                 </div>
@@ -173,16 +169,31 @@
   </div>
 
 
-  <div class="container bg-light">
+  <div class="container">
     <section class="section-news">
-      <h3 class="section-news__header-h3 header-h3__spacing">
+      <h3 class="header-h3 header-h3__spacing">
         <a href="#">НОВОСТИ</a>
       </h3>
 
       <div class="row">
         <div class="col-lg-3 col-sm-6">
           <div class="card news__card">
-            <a href=""><img src="./images/news.jpg" class="card-img-top" alt=""></a>
+            <div class="news__img-wrapper">
+              <a href=""><img src="./images/news2.jpg" class="news__image" alt=""></a>
+            </div>
+            <div class="card-body">
+              <h4 class="text-primary"><a href="#">Новости</a></h4>
+              <p><a href=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, illum!</a></p>
+              <span class="news__date">11 ноября 2021</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="card news__card">
+            <div class="news__img-wrapper">
+              <a href=""><img src="./images/news2.jpg" class="news__image" alt=""></a>
+            </div>
             <div class="card-body ">
               <h4 class="text-primary"><a href="#">Новости</a></h4>
               <p><a href=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, illum!</a></p>
@@ -193,7 +204,9 @@
 
         <div class="col-lg-3 col-sm-6">
           <div class="card news__card">
-            <a href=""><img src="./images/news.jpg" class="card-img-top" alt=""></a>
+            <div class="news__img-wrapper">
+              <a href=""><img src="./images/news2.jpg" class="news__image" alt=""></a>
+            </div>
             <div class="card-body ">
               <h4 class="text-primary"><a href="#">Новости</a></h4>
               <p><a href=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, illum!</a></p>
@@ -204,7 +217,9 @@
 
         <div class="col-lg-3 col-sm-6">
           <div class="card news__card">
-            <a href=""><img src="./images/news.jpg" class="card-img-top" alt=""></a>
+            <div class="news__img-wrapper">
+              <a href=""><img src="./images/news2.jpg" class="news__image" alt=""></a>
+            </div>
             <div class="card-body ">
               <h4 class="text-primary"><a href="#">Новости</a></h4>
               <p><a href=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, illum!</a></p>
@@ -213,60 +228,74 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
-          <div class="card news__card">
-            <a href=""><img src="./images/news.jpg" class="card-img-top" alt=""></a>
-            <div class="card-body ">
-              <h4 class="text-primary"><a href="#">Новости</a></h4>
-              <p><a href=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, illum!</a></p>
-              <span class="news__date">11 ноября 2021</span>
-            </div>
-          </div>
-        </div>
+        <h5v class="section-news__all-news all-news__spacing">
+          <a href="#">ВСЕ НОВОСТИ<i class=" section-news__bi bi-chevron-right"></i></a>
+        </h5v>
       </div>
     </section>
   </div>
 
-  <div class="container bg-danger" style="height: 300px;">
+  <div class="container bg-danger">
     <section class="section-uselinks">
-      <h3 class="section-uselinks__header-h3 header-h3__spacing">
+      <h3 class="header-h3 header-h3__spacing section-uselinks__header">
         <a href="#">ПОЛЕЗНЫЕ ССЫЛКИ</a>
       </h3>
 
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <div class="card section-uselinks__card">
-            <div class="section-uselinks__wrapper">
-              <a href=""><img src="./images/busgov.png" class="card-img-top section-uselinks__image" alt=""></a>
+      <div class="g-container">
+        <div class="g-row card-list card-list__context card-list__context-clear row">
+          <div class="col-xs-12 col-md-5th col-divider">
+            <div class="card__context card__context__small">
+              <a class="card__header" href="">Министерство просвещения Российской Федерации</a>
             </div>
           </div>
-        </div>
+          <div class="col-xs-12 col-md-5th col-divider">
+            <div class="card__context card__context__small">
+              <a class="card__header" href="">Министерство науки и высшего образования Российской Федерации</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-5th col-divider">
+            <div class="card__context card__context__small">
+              <a class="card__header" href="">Единый портал Пермского образования</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-5th col-divider">
+            <div class="card__context card__context__small">
+              <a class="card__header" href="">Минестерство образования Пермского края</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-5th col-divider">
+            <div class="card__context card__context__small">
+              <a class="card__header" href="">Оценка качества муницыпальных услуг в Пермском крае</a>
+            </div>
+          </div>
 
-        <div class="col-lg-3 col-sm-6">
-          <div class="card section-uselinks__card">
-            <div class="section-uselinks__wrapper">
-              <a href=""><img src="./images/ocenka_uslug.jpg" class="card-img-top section-uselinks__image" alt=""></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6">
-          <div class="card section-uselinks__card">
-            <div class="section-uselinks__wrapper">
-              <a href=""><img src="./images/EPSH.png" class="card-img-top section-uselinks__image" alt=""></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6">
-          <div class="card section-uselinks__card">
-            <div class="section-uselinks__wrapper">
-              <a href=""><img src="./images/minobrperm.jpg" class="card-img-top section-uselinks__image" alt=""></a>
-            </div>
-          </div>
         </div>
       </div>
 
+
+    </section>
+  </div>
+
+  <div class="container ">
+    <section class="section-numbers">
+      <h3 class="header-h3 header-h3__spacing text-center">Школа в цифрах</h3>
+
+      <div class="row">
+        <div class="section-numbers__item col-lg-4 col-sm-12">
+          <div class="section-numbers__number">1500</div>
+          <div class="section-numbers__desc">Выпускников</div>
+        </div>
+
+        <div class="section-numbers__item col-lg-4 col-sm-12">
+          <div class="section-numbers__number">30</div>
+          <div class="section-numbers__desc">Учителей</div>
+        </div>
+
+        <div class="section-numbers__item col-lg-4 col-sm-12">
+          <div class="section-numbers__number">750</div>
+          <div class="section-numbers__desc">Учащихся</div>
+        </div>
+      </div>
     </section>
   </div>
 

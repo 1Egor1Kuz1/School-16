@@ -1,0 +1,27 @@
+.section-numbers {
+    padding: 25px 0;
+    display: block;
+    background-color: #fff;
+
+    &__item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        @media (max-width: 1199px) {
+            padding-top: 10px;
+            padding-bottom: 0;
+        }
+    }
+    &__number {
+        margin-bottom: 25px;
+        font-size: 5.71428571rem;
+        line-height: 1;
+    }
+    &__desc {
+        font-size: 1.14285714rem;
+        line-height: 1.5;
+        color: #4a4a4a;
+    }
+}
