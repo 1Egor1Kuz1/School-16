@@ -48,10 +48,14 @@ a {
   word-wrap: break-word;
   padding-left: 15px;
   padding-right: 15px;
+  
 
   &__spacing {
     letter-spacing: 2.6px;
     text-transform: uppercase;
+    @media (max-width: 767.98px) {
+      text-align: center;
+    }
   }
 }
 
