@@ -1,7 +1,6 @@
 .section-news {
     padding: 25px 0;
     display: block;
-    background-color: #fff;
 
     &__all-news {
         font-weight: 700;
@@ -23,10 +22,7 @@
         margin-left: 4px;
     }
 }
-.col-md-3 {
-    padding-right: 15px;
-    padding-left: 15px;
-}
+
 
 .news {
     &__card {

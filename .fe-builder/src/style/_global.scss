@@ -52,18 +52,6 @@ ul {
   padding-left: 0rem;
 }
 
-.g-container {
-  margin: 15px 0 0 0;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.g-row:after {
-  display: table;
-  clear: both;
-  content: " ";
-}
-
 .col-md-5th {
   @media (min-width: 992px) {
     width: 20%;
