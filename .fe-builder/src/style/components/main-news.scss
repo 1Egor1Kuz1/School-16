@@ -1,59 +1,84 @@
 .section-news {
-    padding: 25px 0;
-    display: block;
+  padding: 25px 0;
+  display: block;
 
-    &__all-news {
-        font-weight: 700;
-        color: #000;
-        word-wrap: break-word;
-        padding-left: 15px;
-        padding-top: 5px;
-    }
-    &__spacing {
-        letter-spacing: 2.6px;
-        text-transform: uppercase;
-    }
-    &__bi {
-        display: inline-block;
-        background-repeat: no-repeat;
-        background-size: 2rem 2rem;
-        font-weight: 700 !important;
-        font-size: 14px;
-        margin-left: 4px;
-    }
+  &__all-news {
+    font-weight: 700;
+    color: #000;
+    word-wrap: break-word;
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+  &__spacing {
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+  }
+  &__bi {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 2rem 2rem;
+    font-weight: 700 !important;
+    font-size: 14px;
+    margin-left: 4px;
+  }
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+  background-color: #fff;
+  &__all-news {
+    font-weight: 700;
+    color: #000;
+    word-wrap: break-word;
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+
+  &__spacing {
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+  }
+
+  &__bi {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 2rem 2rem;
+    font-weight: 700 !important;
+    font-size: 14px;
+    margin-left: 4px;
+  }
 }
 
+.news-card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+  //margin: 10px;
 
-.news {
-    &__card {
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
-        transition: all 0.3s;
-        margin: 10px;
-    }
-    &__card:hover {
-        box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
-    }
-    &__img-wrapper {
-        @include imageWrapper(308, 172);
-        overflow: hidden;
-    }
+  &:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+  }
 
-    &__image {
-        @include absoluteCenterImage();
+  &__img-wrapper {
+    @include imageWrapper(308, 172);
+    overflow: hidden;
+  }
+
+  &__image {
+    @include absoluteCenterImage();
+  }
+
+  &__date {
+    display: inline-block;
+    max-width: 100%;
+    margin-right: 13px;
+    font-size: 0.85714286rem;
+    line-height: 1.4;
+    color: #9b9b9b;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+
+    &:last-child {
+      margin-right: 0;
     }
-    &__date:last-child {
-        margin-right: 0;
-    }
-    &__date {
-        -webkit-transition: color 0.2s ease;
-        transition: color 0.2s ease;
-    }
-    &__date {
-        display: inline-block;
-        max-width: 100%;
-        margin-right: 13px;
-        font-size: 0.85714286rem;
-        line-height: 1.4;
-        color: #9b9b9b;
-    }
+  }
 }
