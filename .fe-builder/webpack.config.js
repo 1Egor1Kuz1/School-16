@@ -49,6 +49,15 @@ const config = {
                     filename: 'images/[name][ext][query]'
                 }
             },
+            {
+                test: /icons.+\.(svg)$/,
+                use: [
+                    {
+                        loader: 'svg-sprite-loader',
+                    },
+
+                ],
+            },
         ],
     },
     plugins: [
