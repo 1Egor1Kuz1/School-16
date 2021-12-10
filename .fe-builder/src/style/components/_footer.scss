@@ -47,7 +47,12 @@
         margin-bottom: 20px;
         font-size: 0;
         text-align: center;
-        &_item{
+        
+        &_spacing{
+            padding: 0 15px;
+        }
+
+        &_item {
             display: inline-block;
             margin-right: 30px;
             margin-bottom: 12px;
@@ -56,6 +61,16 @@
             line-height: 1.3;
             white-space: nowrap;
             color: #60615f;
+        }
+        &_title {
+            display: inline-block;
+            margin-right: 30px;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.3;
+            white-space: nowrap;
+            color: #fff;
         }
     }
 }
@@ -72,7 +87,59 @@
     &__wrap {
         padding-top: 15px;
         padding-bottom: 15px;
-       
+        display: flex;
         text-align: center;
+        align-items: center;
     }
+    &__item {
+        margin: 10px 35px;
+    }
+    &__item svg {
+        color: #283b50;
+    }
+    &__item svg:hover {
+        color: #212529;
+        transition: 1s;
+        transform: scale(1.3);
+    }
+}
+
+.footer-end{
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button-glasses{
+    margin-top: 20px;
+    padding: 0 0 0 30px;
+    font-size: 1rem;
+    color: #fff;
+    border: 2px solid #252526;
+    transition: border .4s ease;
+    &__item{
+        position: relative;
+        top: -1px;
+        display: inline-block;
+        width: 42px;
+        height: 18px;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+}
+.button-glasses input[type='submit'] {
+    display: inline-block;
+    padding: 18px 30px 18px 0;
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase !important;
+    border: none;
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
