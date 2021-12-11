@@ -20,6 +20,12 @@
       justify-content: space-between;
     }
   }
+  &__mobile-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-size: calc(1.3rem + 0.6vw);
+  }
 
   &__spacing {
     letter-spacing: 2.6px;

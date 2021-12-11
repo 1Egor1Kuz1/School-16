@@ -10,8 +10,9 @@ a {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-
-
+a:hover{
+  color: $warning;
+}
 
 .dropdown-toggle::after {
   vertical-align: 0.2em;
@@ -23,7 +24,7 @@ a {
   background-repeat: no-repeat;
   background-size: 2rem 2rem;
   font-weight: 700 !important;
-  font-size: 15px;
+  font-size: 19px;
   margin-left: 5px;
 }
 
@@ -35,6 +36,7 @@ a {
   word-wrap: break-word;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 10px;
   
 
   &__spacing {

@@ -26,8 +26,8 @@
                     <li class="menu__li">
                         <a class="offcanvas-body__text-show ">link</a>
                         <ul class="float-menu">
-                            <li class="offcanvas-body__text-hide">1</li>
-                            <li class="offcanvas-body__text-hide">2</li>
+                            <li class="offcanvas-body__text-hide"><a href="">1</a></li>
+                            <li class="offcanvas-body__text-hide"><a href="">2</a></li>
 
                         </ul>
                     </li>
@@ -43,10 +43,12 @@
             <div class="container">
 
                 <div class="navbar__toggler">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon midle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
                     </button>
 
                     <div class="navbar-brand">
@@ -60,23 +62,23 @@
                     </div>
                 </div>
 
-                <div class="collapse navbar-collapse navbar__mobile-menu justify-content-end"
-                    id="navbarSupportedContent">
+                <div class="collapse navbar-collapse navbar__mobile-menu justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Главная</a>
+                            <a class="nav-link active text-light navbar__mobile-menu_link" aria-current="page"
+                                href="#">Главная</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Расписание</a>
+                            <a class="nav-link text-light navbar__mobile-menu_link" href="#">Расписание</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Новости</a>
+                            <a class="nav-link text-light navbar__mobile-menu_link" href="#">Новости</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Контакты</a>
+                            <a class="nav-link text-light navbar__mobile-menu_link" href="#">Контакты</a>
                         </li>
 
                         <li>
@@ -163,7 +165,9 @@
 
             <section class="section-news section-container">
                 <div class="section-news__all-news all-news__spacing">
-                    <h3 class="header header-h3__spacing">Новости</h3>
+                    <h3 class="header header-h3__spacing d-none d-lg-block">Новости</h3>
+                    <a class="header header-h3__spacing section-news__mobile-title d-lg-none d-sm-block">Новости<i
+                            class=" section-news__bi bi-chevron-right"></i></a>
                     <a href="#" class="d-none d-lg-block">СМОТРЕТЬ ВСЕ<i
                             class=" section-news__bi bi-chevron-right"></i></a>
                 </div>
@@ -241,7 +245,7 @@
             </section>
 
             <section class="section-uselinks section-container bg-danger">
-                <h3 class=" header-h3__spacing section-uselinks__header">ПОЛЕЗНЫЕ ССЫЛКИ</h3>
+                <h3 class=" header-h3__spacing">ПОЛЕЗНЫЕ ССЫЛКИ</h3>
 
                 <div class="useful-links">
                     <ul class="useful-links__list">
@@ -292,7 +296,7 @@
                 </section>
             </div>
         </main>
-        <footer class="page-footer">
+        <footer class="page-footer bg-secondary">
             <section class="social-link__wrap bg-primary justify-content-center">
                 <a href="" class="social-link__item">
                     <svg width="30" height="30">
@@ -338,7 +342,7 @@
                             <a class="page-footer__links_item">Контактная информация</a>
                         </div>
 
-                        
+
                     </div>
                 </div>
             </section>
