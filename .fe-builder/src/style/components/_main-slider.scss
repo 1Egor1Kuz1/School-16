@@ -1,66 +1,82 @@
-.swiper {
-  width: 100%;
-  height: 100%;
-}
+.main-swiper {
+  &.swiper {
+    width: 100%;
+    height: 100%;
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
+    .swiper-wrapper {
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 50px;
+        height: 50px;
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  color: #fff;
-}
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: 25%;
-  right: 0;
-  left: auto;
-}
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 12px;
-  color: #000;
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.4);
-}
+        &:hover {
+          &:after {
+            color: $warning;
+          }
+        }
 
-.swiper-pagination-bullet-active {
-  background: $warning;
-}
-.swiper-slide {
-  &__wrapper {
-    @include imageWrapper(1920, 900);
-  }
+        &:after {
+          color: #fff;
+          transition: color .5s;
+        }
+      }
 
-  &__image {
-    @include absoluteCenterImage();
-  }
+      .swiper-pagination-bullets.swiper-pagination-horizontal {
+        width: 25%;
+        right: 0;
+        left: auto;
+      }
 
-  &__content {
-    position: absolute;
-    height: 40%;
-    right: 30%;
-    bottom: 0;
-    left: 0;
-    color: #fff;
-    background-color: rgba($color: $secondary, $alpha: 0.8);
-    display: flex;
-    flex-direction: column;
-    @include media-breakpoint-down(md) {
-      width: 100%;
-      height: 100%;
-      background-color: $primary;
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #000;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.4);
+      }
+
+      .swiper-pagination-bullet-active {
+        background: $warning;
+      }
     }
-    &__crop {
+  }
+
+  &__item {
+    @include imageWrapper(1920, 900);
+
+    &-img {
+      @include absoluteCenterImage();
+      display: block;
+      width: 100%;
+
+    }
+
+    &-content {
+      position: absolute;
+      height: 40%;
+      right: 30%;
+      bottom: 0;
+      left: 0;
+      color: #fff;
+      background-color: rgba($color: $secondary, $alpha: 0.8);
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+      }
+    }
+
+    &-title {
       padding: 25px 30px;
       flex-grow: 1;
       @include media-breakpoint-down(md) {
@@ -68,18 +84,34 @@
       }
     }
 
-    &__footer {
-      background-color: rgba(0, 0, 0, 0.2);
-      height: 50px;
+
+    &-footer {
+      padding: 13px 30px;
+      background: rgba(0, 0, 0, 0.2);
+      //height: 50px;
       vertical-align: baseline;
       display: flex;
       align-items: center;
-    }
-
-    &__footer-link {
-      padding: 25px 30px;
-      @include media-breakpoint-down(md) {
+      transition: background .5s;
+      //padding: 0 30px;
+      /*@include media-breakpoint-down(md) {
         padding: 10px 20px;
+      }*/
+      &:hover {
+        background: rgba(0, 0, 0, 0.8);
+
+        span, i {
+          color: $warning;
+        }
+      }
+
+      span, i {
+        transition: color .5s;
+      }
+      i{
+        &:before{
+          display: block;
+        }
       }
     }
   }
