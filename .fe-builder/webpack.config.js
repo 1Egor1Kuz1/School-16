@@ -2,6 +2,7 @@ const path = require('path');
 
 const webpack = require('webpack');
 const buildConfig = require('./build.config.js');
+const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const publicPath = (buildConfig.dir || '/build');
@@ -63,6 +64,14 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({ template: 'src/index.html' }),
         new MiniCssExtractPlugin(),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: 'public/images',
+                    to: './images'
+                }
+            ],
+        }),
     ],
 };
 
